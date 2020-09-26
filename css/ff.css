@@ -1,4 +1,4 @@
-a {text-decoration: none; color: #00A2FF}
+/*wallpaper*/
 body {
 	background-image: url(https://i.pinimg.com/originals/22/8e/30/228e303f741a61efc44deb7e793951df.png);
 	background-repeat: no-repeat;
@@ -14,14 +14,43 @@ body {
 	background-color: pink;
 }
 .topnav a {
+	text-decoration: none;
+	color: #00A2FF;
 	float: left;
 	text-align:center;
 	padding: 14px 16px;
 	font-size: 17px;
 }
-.topnav a:hover {
-	background-color: gray;
+.topnav a:hover, .dropdown:hover .dropbtn {
+	background-color: #ddd;
 }
 .topnav a.active {
+	background-color: white;
+}
+.dropdown {
+ 	float: left;
+ 	text-align: center;
+ 	overflow: hidden;
+}
+.dropbtn {
+	font-size: 17px;  
+	border: none;
+ 	color: #00A2FF;
+ 	padding: 14px 16px;
+ 	background-color: pink;
+ 	font-family: inherit;
+}
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	background-color: #ffffa3;
+}
+.dropdown-content a:hover {
+  	background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  	display: block;
+}
+.dropdown-content a.active {
 	background-color: white;
 }
