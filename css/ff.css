@@ -1,14 +1,14 @@
-/*wallpaper*/
+/*Wallpaper*/
+
 body {
 	background-image: url(https://i.pinimg.com/originals/22/8e/30/228e303f741a61efc44deb7e793951df.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 }
-{
-	margin: 0;
-	font-family: Helvetica;
-}
+
+/*Navigational menu*/
+
 .topnav {
 	overflow: hidden;
 	background-color: pink;
@@ -21,10 +21,10 @@ body {
 	padding: 14px 16px;
 	font-size: 17px;
 }
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
 	background-color: #ddd;
 }
-.topnav a.active {
+.topnav a.active, .dropdown-content a.active {
 	background-color: white;
 }
 .dropdown {
@@ -45,12 +45,8 @@ body {
   	position: absolute;
   	background-color: #ffffa3;
 }
-.dropdown-content a:hover {
-  	background-color: #ddd;
-}
 .dropdown:hover .dropdown-content {
   	display: block;
 }
-.dropdown-content a.active {
-	background-color: white;
-}
+
+/**/
