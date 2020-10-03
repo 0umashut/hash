@@ -26,27 +26,39 @@ body {
 }
 .topnav a.active, .dropdown-content a.active {
 	background-color: white;
+	user-select: none;
 }
 .dropdown {
  	float: left;
  	text-align: center;
  	overflow: hidden;
 }
-.dropbtn {
+.dropdown .dropbtn {
 	font-size: 17px;  
 	border: none;
  	color: #00A2FF;
  	padding: 14px 16px;
  	background-color: pink;
  	font-family: inherit;
+ 	margin: 0;
 }
 .dropdown-content {
   	display: none;
   	position: absolute;
   	background-color: #ffffa3;
 }
+.dropdown-content a {
+	float: none;
+	color: inherit;
+	padding: 14px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
 .dropdown:hover .dropdown-content {
   	display: block;
 }
 
-/**/
+/*
+
+*/
